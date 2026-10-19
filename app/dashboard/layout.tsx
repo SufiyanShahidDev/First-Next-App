@@ -20,7 +20,18 @@ const layout = ({ children }: { children: React.ReactNode }) => {
           </ul>
         </div>
         {/* body */}
-        <div>{children}</div>
+        <div>
+          {/* widgets */}
+          <div className="flex gap-5 m-3">
+            
+          <div className="w-[250px] h-[150px] text-center bg-blue-950 text-white">Widgets</div>
+          <div className="w-[250px] h-[150px] text-center bg-blue-950 text-white">Widgets</div>
+          <div className="w-[250px] h-[150px] text-center bg-blue-950 text-white">Widgets</div>
+          <div className="w-[250px] h-[150px] text-center bg-blue-950 text-white">Widgets</div>
+          </div>
+
+          <div className="m-3">{children}</div>
+        </div>
       </div>
     </div>
   );
