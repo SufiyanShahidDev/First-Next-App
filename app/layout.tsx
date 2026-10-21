@@ -24,6 +24,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       suppressHydrationWarning
     >
+      {/* <nav className="bg-gray-800 text-white p-4">
+        <ul>
+          <li><Link href={"/"}>Home</Link></li>
+          <li><Link href={"/about"}>About</Link></li>
+          <li><Link href={"/login"}>login</Link></li>
+        </ul>
+      </nav> */}
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
